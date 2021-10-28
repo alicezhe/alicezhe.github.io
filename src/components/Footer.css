@@ -1,0 +1,12 @@
+.footer-links a {
+    color: #A3A3A3;
+    transition: ease-in-out 0.2s;
+}
+.footer-links a:hover, .company-name {
+    color: #3D3D3D;
+}
+
+.company-name {
+    color: #3D3D3D;
+    text-decoration: none;
+}
