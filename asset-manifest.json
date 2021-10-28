@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/alicezhe.github.io/static/css/main.a617e044.chunk.css",
+    "main.js": "/alicezhe.github.io/static/js/main.aedc5479.chunk.js",
+    "main.js.map": "/alicezhe.github.io/static/js/main.aedc5479.chunk.js.map",
+    "runtime-main.js": "/alicezhe.github.io/static/js/runtime-main.518b4468.js",
+    "runtime-main.js.map": "/alicezhe.github.io/static/js/runtime-main.518b4468.js.map",
+    "static/js/2.f71ca5ef.chunk.js": "/alicezhe.github.io/static/js/2.f71ca5ef.chunk.js",
+    "static/js/2.f71ca5ef.chunk.js.map": "/alicezhe.github.io/static/js/2.f71ca5ef.chunk.js.map",
+    "static/js/3.c90c9ec1.chunk.js": "/alicezhe.github.io/static/js/3.c90c9ec1.chunk.js",
+    "static/js/3.c90c9ec1.chunk.js.map": "/alicezhe.github.io/static/js/3.c90c9ec1.chunk.js.map",
+    "index.html": "/alicezhe.github.io/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/alicezhe.github.io/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.f71ca5ef.chunk.js.LICENSE.txt": "/alicezhe.github.io/static/js/2.f71ca5ef.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/alicezhe.github.io/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.518b4468.js",
+    "static/js/2.f71ca5ef.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.aedc5479.chunk.js"
+  ]
+}
