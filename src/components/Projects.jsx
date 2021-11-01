@@ -70,6 +70,7 @@ export default function Projects() {
                       description= {project.description}
                       technologies = {project.technologies}
                       date = {project.date}
+                      link = {project.link}
                       />
                     </div>
                   )

@@ -39,6 +39,9 @@ const GlobalStyle = createGlobalStyle`
     color: #A3A3A3;
     border-radius: 5px;
   }
+  .highlight {
+    background-color: 
+  }
 `;
  
 export default GlobalStyle;

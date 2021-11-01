@@ -23,7 +23,7 @@ export default function Project(props) {
           })}
         </div>
       </div>
-      <Modal showModal={showModal} setShowModal={setShowModal} image={props.image} description={props.description} date={props.date} technologies={props.technologies}/>
+      <Modal showModal={showModal} setShowModal={setShowModal} image={props.image} description={props.description} date={props.date} technologies={props.technologies} title={props.title} link={props.link}/>
     </div>
   );
 }

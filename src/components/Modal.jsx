@@ -1,6 +1,7 @@
 import React, {useRef, useEffect, useCallback} from 'react';
 import styled from "styled-components";
 import { MdClose } from "react-icons/md";
+import { FiGithub } from "react-icons/fi";
 import "./Modal.css"
 
 const CloseModalButton = styled(MdClose)`
@@ -12,7 +13,7 @@ const CloseModalButton = styled(MdClose)`
   z-index: 10;
 `;
 
-export const Modal = ({ showModal, setShowModal, image, description, technologies, date }) => {
+export const Modal = ({ showModal, setShowModal, image, description, title, technologies, date, link }) => {
   const modalRef = useRef();
 
   const closeModal = e => {
@@ -40,7 +41,7 @@ export const Modal = ({ showModal, setShowModal, image, description, technologie
           <div class="col-8 vh-100 d-flex justify-content-center align-items-center">
             <div class="p-2 pb-4 d-flex flex-column modal-container w-100 h-75 position-relative">
               <div class="w-100 d-flex justify-content-between p-2">
-                <h3 class="mx-5 my-3">PennBook</h3>
+                <h3 class="mx-5 my-3">{title}</h3>
                 <CloseModalButton aria-label='Close modal' onClick={() => setShowModal(prev => !prev)} /> 
               </div>
               <div class="overflow-auto w-100 h-100">
@@ -55,7 +56,9 @@ export const Modal = ({ showModal, setShowModal, image, description, technologie
                         )
                       })}
                     </div>
-                    <div class="d-inline-block"><p>Created {date}</p></div>
+                    <div class="d-inline-block">
+                      <p>Created {date}</p>
+                    </div>
                   </div>
                   <div class="mb-5">
                     {description.map((paragraph) => {
