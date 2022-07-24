@@ -1,21 +1,25 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import GlobalStyle from './theme/GlobalStyles';
-import { Header, Footer, Home, Projects} from "./components";
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import GlobalStyle from './theme/GlobalStyles'
+import Home from './components/Home/Home'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import Projects from './components/Projects/Projects'
 
 function App() {
   return (
-    <div class="App h-100 d-flex flex-column justify-content-between">
+    <div className="App h-screen flex flex-col justify-between">
       <GlobalStyle />
       <Router>
         <Header />
-          <Switch>
-            <Route path="/" exact component={() => <Home />} />
-            <Route path="/projects" exact component={() => <Projects />} />
-          </Switch>
+        <Switch>
+          <Route path="/" exact component={() => <Home />} />
+          <Route path="/projects" exact component={() => <Projects />} />
+        </Switch>
         <Footer />
       </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
- 
+import { createGlobalStyle } from 'styled-components'
+
 const GlobalStyle = createGlobalStyle`
   body {
     color: ##3D3D3D;
@@ -34,14 +34,9 @@ const GlobalStyle = createGlobalStyle`
   h4 {
     color: #A3A3A3;
   }
-  .tag {
-    background-color: #EBEBEB;
-    color: #A3A3A3;
-    border-radius: 5px;
-  }
   .highlight {
     background-color: 
   }
-`;
- 
-export default GlobalStyle;
+`
+
+export default GlobalStyle
