@@ -3,7 +3,7 @@ import './Project.css'
 import Modal from '../Modal/Modal'
 
 export default function Project({
-  title, image, description, date, technologies, tags, link,
+  title, images, description, date, technologies, tags, link, github,
 }) {
   const [showModal, setShowModal] = useState(false)
   const list = tags
@@ -14,7 +14,7 @@ export default function Project({
 
   return (
     <div className="project">
-      <img onClick={openModal} src={image} alt={`${title}`} className="w-full my-2 my-sm-3 cursor-pointer" />
+      <img onClick={openModal} src={images[0]} alt={`${title}`} className="w-full my-2 my-sm-3 cursor-pointer" />
       <div className="w-full flex justify-between">
         <p className="m-0">{title}</p>
         <div className="hidden lg:block flex mt-2">
@@ -23,7 +23,7 @@ export default function Project({
           ))}
         </div>
       </div>
-      <Modal showModal={showModal} setShowModal={setShowModal} image={image} description={description} date={date} technologies={technologies} title={title} link={link} />
+      <Modal showModal={showModal} setShowModal={setShowModal} images={images} description={description} date={date} technologies={technologies} title={title} link={link} github={github} />
     </div>
   )
 }

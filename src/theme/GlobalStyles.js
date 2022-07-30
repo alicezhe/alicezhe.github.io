@@ -31,11 +31,11 @@ const GlobalStyle = createGlobalStyle`
   h1, h2, h3 {
     font-weight: 500;
   }
-  h4 {
+  h4, .modal-link {
     color: #A3A3A3;
   }
-  .highlight {
-    background-color: 
+  .modal-link {
+    text-decoration: underline;
   }
 `
 

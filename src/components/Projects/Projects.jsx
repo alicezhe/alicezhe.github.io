@@ -59,12 +59,13 @@ export default function Projects() {
                 <div className="my-2">
                   <Project
                     title={project.title}
-                    image={project.image}
+                    images={project.images}
                     tags={project.tags}
                     description={project.description}
                     technologies={project.technologies}
                     date={project.date}
                     link={project.link}
+                    github={project.github}
                   />
                 </div>
               ))}

@@ -8,7 +8,7 @@ import Projects from './components/Projects/Projects'
 
 function App() {
   return (
-    <div className="App h-screen flex flex-col justify-between">
+    <div className="App h-screen flex flex-col justify-between text-[#363636]">
       <GlobalStyle />
       <Router>
         <Header />

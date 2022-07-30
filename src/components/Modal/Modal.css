@@ -30,3 +30,6 @@
   min-height: 100%;
 }
 
+.carousel {
+  overflow: visible!important;
+}
