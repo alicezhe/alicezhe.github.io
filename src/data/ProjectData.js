@@ -3,7 +3,12 @@ const projectData = [
     id: 20,
     title: 'Spotify Daily Wrapped',
     images: [
-      'images/projects/blank.png',
+      'images/projects/dailywrapped1.png',
+      'images/projects/dailywrapped2.png',
+      'images/projects/dailywrapped3.png',
+      'images/projects/dailywrapped4.png',
+      'images/projects/dailywrapped5.png',
+      'images/projects/dailywrapped6.png',
     ],
     description: ['A platform I built with other Vanguard interns where users can view their own and their followers\' top songs and analytics, like Spotify Wrapped but year-round!'],
     tags: ['code'],
