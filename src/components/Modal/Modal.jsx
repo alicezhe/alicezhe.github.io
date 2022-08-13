@@ -41,8 +41,8 @@ const Modal = ({
     <>
       {showModal ? (
         <div className="w-full grid grid-cols-12 flex items-center justify-center background overflow-hidden" ref={modalRef} onClick={closeModal}>
-          <div className="col-span-2" />
-          <div className="col-span-8 h-screen flex justify-center items-center">
+          <div className="col-span-1 sm:col-span-2" />
+          <div className="col-span-10 sm:col-span-8 h-screen flex justify-center items-center">
             <div className="p-4 lg:pb-8 lg:pt-0 flex flex-col modal-container w-full h-3/4 relative">
               <div className="md:px-8 md:pt-8 w-full flex justify-between">
                 <h3>{title}</h3>
@@ -79,16 +79,16 @@ const Modal = ({
                       <div dangerouslySetInnerHTML={{ __html: paragraph }} />
                     ))}
                   </div>
-                  <Carousel className="w-full carousel" height={512} indicators={images.length > 1} navButtonsAlwaysInvisible={images.length < 2}>
+                  <Carousel className="w-full carousel" height={screen.width > 640 ? 512: 256} indicators={images.length > 1} navButtonsAlwaysInvisible={images.length < 2}>
                     {
-                      images.map((image, i) => <div key={i} className="h-[512px] w-full modal-image" style={{ backgroundImage: `url(${image})` }} />)
+                      images.map((image, i) => <div key={i} className="h-[256px] md:h-[512px] w-full modal-image" style={{ backgroundImage: `url(${image})` }} />)
                     }
                   </Carousel>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-span-2" />
+          <div className="col-span-1 sm:col-span-2" />
         </div>
       ) : null}
     </>

@@ -8,7 +8,7 @@ function Header({ location }) {
         <div className="flex flex-wrap items-start justify-between m-8">
           <Link to="/" className="profile-div">
             <div className="flex items-center">
-              <div className="inline-block mx-3 order-2">
+              <div className="inline-block sm:mx-3 order-2">
                 <h3 className="text-2xl">Alice He</h3>
                 <h4 className="text-[#A3A3A3] transition ease-in-out duration-200 hover:text-[#3D3D3D]">CS @ Penn</h4>
               </div>
